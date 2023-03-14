@@ -1,0 +1,19 @@
+application:
+  name: App Estudos Spring
+
+server:
+  port: 3333
+  servlet:
+    context-path: /api/v1
+
+
+# Configuração do DataSource
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres-java
+    username: postgres
+    password: docker
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
